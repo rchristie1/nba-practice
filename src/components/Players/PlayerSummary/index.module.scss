@@ -1,0 +1,94 @@
+@import '../../UI/tabstyling.scss';
+
+.container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.averages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  border-bottom: 1px solid gray;
+  height: 65px;
+}
+
+button {
+  height: 40px;
+  width: 180px;
+}
+
+.quickSummary {
+  animation: fadein 300ms linear 1;
+  padding-bottom: 50px;
+  text-align: center;
+
+  div {
+    position: relative;
+  }
+}
+
+.teamLogo {
+  animation: fadein 300ms linear 1;
+  img {
+    height: 200px;
+  }
+}
+
+.imgContainer {
+  width: 260px;
+  height: 190px;
+}
+
+.fullSize {
+  width: 100%;
+  animation: fadein 300ms linear 1;
+}
+
+.infoTabs {
+  @extend %tab-styles;
+}
+
+.gameLogTitle {
+  text-align: center;
+  margin: 60px 0;
+}
+
+h3 {
+  display: -webkit-box;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

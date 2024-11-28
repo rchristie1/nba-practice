@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', sans-serif;
+}
+
+:global(.ytp-chrome-top.ytp-show-cards-title) {
+  display: none;
+}

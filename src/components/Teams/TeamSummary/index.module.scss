@@ -1,0 +1,72 @@
+@import '../../UI/tabstyling.scss';
+
+.teamContainer {
+  height: 360px;
+  padding-top: 20px;
+}
+
+.teamSummary,
+.left,
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.teamSummary {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  .right {
+    margin-right: 40px;
+  }
+  .left {
+    width: 50%;
+    justify-content: space-between;
+  }
+}
+
+.divider {
+  min-height: 200px;
+  width: 1px;
+  background-color: darkgray;
+  margin: 0 30px;
+}
+
+.teamName {
+  h1 {
+    font-size: 55px;
+  }
+}
+
+.tabs {
+  @extend %tab-styles;
+}
+
+.seasonRankings,
+.teamDetails {
+  ul {
+    list-style-type: none;
+    li {
+      padding: 6px 0;
+    }
+  }
+}
+
+.keyStats {
+  text-align: center;
+  h3 {
+    display: initial;
+  }
+
+  .east {
+    color: #1c66b3;
+  }
+  .west {
+    color: #c52d28;
+  }
+}
+
+@media (max-width: 1280px) {
+  .divider {
+    display: none;
+  }
+}

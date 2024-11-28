@@ -1,0 +1,29 @@
+%header-footer-setup {
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #0b2255;
+  color: #fff;
+  position: fixed;
+  z-index: 1301;
+}
+
+header {
+  @extend %header-footer-setup;
+  top: 0;
+  height: 75px;
+}
+footer {
+  @extend %header-footer-setup;
+  bottom: 0;
+  height: 5rem;
+  span {
+    border-bottom: none;
+    padding: 1rem 2rem;
+  }
+}
+
+.profile {
+  margin-top: 4.7rem;
+}
